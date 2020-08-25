@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Cluster/effects/VignetteEffect.effect</file>
+        <file>Cluster/fonts/TitilliumWeb-Regular.ttf</file>
+        <file>Cluster/maps/gradient_lines_001.png</file>
+        <file>Cluster/maps/Icon_TurnLeft_ON.png</file>
+        <file>Cluster/maps/kmh260.png</file>
+        <file>Cluster/maps/OpenfootageNET_garage-512.hdr</file>
+        <file>Cluster/maps/road.png</file>
+        <file>Cluster/maps/Rpm7.png</file>
+        <file>Cluster/models/needle_2/meshes/qt_gauge_needles_2.mesh</file>
+        <file>Cluster/models/needle_2/needle_2.import</file>
+        <file>Cluster/models/Ring_2/meshes/qt_gauge_ring_2.mesh</file>
+        <file>Cluster/models/Ring_2/Ring_2.import</file>
+        <file>Cluster/models/roundbg_1/maps/gradient.png</file>
+        <file>Cluster/models/roundbg_1/meshes/qt_gauge_background_round_1.mesh</file>
+        <file>Cluster/models/roundbg_1/roundbg_1.import</file>
+        <file>Cluster/models/Sportscar_15k/maps/c_tex.jpg</file>
+        <file>Cluster/models/Sportscar_15k/meshes/backWheels.mesh</file>
+        <file>Cluster/models/Sportscar_15k/meshes/BodyBack.mesh</file>
+        <file>Cluster/models/Sportscar_15k/meshes/BodyFront.mesh</file>
+        <file>Cluster/models/Sportscar_15k/meshes/frontWheels.mesh</file>
+        <file>Cluster/models/Sportscar_15k/Sportscar_15k.import</file>
+        <file>Cluster/models/tickmark_260/meshes/qt_gauge_tickmarks_260.mesh</file>
+        <file>Cluster/models/tickmark_260/tickmark_260.import</file>
+        <file>Cluster/models/tickmark_8_small/meshes/qt_gauge_tickmarks_8_small.mesh</file>
+        <file>Cluster/models/tickmark_8_small/tickmark_8_small.import</file>
+        <file>Cluster/presentations/SampleProject.uip</file>
+        <file>Cluster/qml/Map.jpg</file>
+        <file>Cluster/qml/Navigation.qml</file>
+        <file>Cluster/scripts/dateAndTime.qml</file>
+        <file>Cluster/SampleProject.uia</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIP Version="1" >
+	<Project Revision="1" >
+		<Graph >
+			<Group id="__import__root__" >
+				<Model id="BodyFront" name="BodyFront" orientation="Right Handed" position="-12.4369 103.274 765.204" rotation="-90 -0 0" rotationorder="XYZr" scale="9.85043 9.85043 9.85043" sourcepath="meshes/BodyFront.mesh" >
+                                        <Material id="glass_tex2" name="glass_tex2" blendmode="Normal" diffuse="1 1 1" diffusemap="glass_tex2_diffusemap" emissivepower="0" opacity="100" specularamount="0" specularroughness="5.88235" >
+                                                <Image id="glass_tex2_diffusemap" name="glass_tex2_diffusemap" sourcepath="maps/c_tex.jpg" />
+					</Material>
+                                        <Material id="rubber2" name="rubber2" blendmode="Normal" diffuse="0.095729 0.095729 0.095729" emissivepower="0" opacity="100" specularamount="0" specularroughness="7.84314" />
+                                        <Material id="black2" name="black2" blendmode="Normal" diffuse="0 0 0" emissivepower="0" opacity="100" specularamount="0" specularroughness="0.980392" />
+                                        <Material id="body2" name="body2" blendmode="Normal" diffuse="0.527059 0.0313726 0.0313726" emissivepower="0" opacity="100" specularamount="0" specularroughness="31.9608" />
+				</Model>
+				<Model id="backWheels" name="backWheels" orientation="Right Handed" position="326.242 131.284 491.438" rotation="-90 -0 0" rotationorder="XYZr" scale="9.85043 9.85043 9.85043" sourcepath="meshes/backWheels.mesh" >
+                                        <Material id="chrome" name="chrome" blendmode="Normal" diffuse="0.668235 0.668235 0.705882" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.27451" />
+                                        <Material id="rubber" name="rubber" blendmode="Normal" diffuse="0.095729 0.095729 0.095729" emissivepower="0" opacity="100" specularamount="0" specularroughness="7.84314" />
+                                        <Material id="rims" name="rims" blendmode="Normal" diffuse="0.142219 0.142219 0.142219" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.27451" />
+                                        <Material id="silver" name="silver" blendmode="Normal" diffuse="0.476863 0.486275 0.486275" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.47059" />
+				</Model>
+				<Model id="BodyBack" name="BodyBack" orientation="Right Handed" position="-12.4369 103.274 765.204" rotation="-90 -0 0" rotationorder="XYZr" scale="9.85043 9.85043 9.85043" sourcepath="meshes/BodyBack.mesh" >
+                                        <Material id="glass_tex" name="glass_tex" blendmode="Normal" diffuse="1 1 1" diffusemap="glass_tex_diffusemap" emissivepower="0" opacity="100" specularamount="0" specularroughness="5.88235" >
+                                                <Image id="glass_tex_diffusemap" name="glass_tex_diffusemap" sourcepath="maps/c_tex.jpg" />
+					</Material>
+                                        <Material id="chrome_0001" name="chrome" blendmode="Normal" diffuse="0.668235 0.668235 0.705882" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.27451" />
+                                        <Material id="silver_0001" name="silver" blendmode="Normal" diffuse="0.476863 0.486275 0.486275" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.47059" />
+                                        <Material id="body" name="body" blendmode="Normal" diffuse="0.527059 0.0313726 0.0313726" emissivepower="0" opacity="100" specularamount="0" specularroughness="31.9608" />
+                                        <Material id="rubber_0002" name="rubber" blendmode="Normal" diffuse="0.095729 0.095729 0.095729" emissivepower="0" opacity="100" specularamount="0" specularroughness="7.84314" />
+                                        <Material id="black" name="black" blendmode="Normal" diffuse="0 0 0" emissivepower="0" opacity="100" specularamount="0" specularroughness="0.980392" />
+                                        <Material id="d_glass" name="d_glass" blendmode="Normal" diffuse="0.160894 0.16512 0.154057" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.27451" />
+				</Model>
+				<Model id="frontWheels" name="frontWheels" orientation="Right Handed" position="326.242 131.284 -518.562" rotation="169.137 -0 0" rotationorder="XYZr" scale="9.85043 9.85043 9.85043" sourcepath="meshes/frontWheels.mesh" >
+                                        <Material id="chrome_0002" name="chrome" blendmode="Normal" diffuse="0.668235 0.668235 0.705882" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.27451" />
+                                        <Material id="rubber_0003" name="rubber" blendmode="Normal" diffuse="0.095729 0.095729 0.095729" emissivepower="0" opacity="100" specularamount="0" specularroughness="7.84314" />
+                                        <Material id="rims_0001" name="rims" blendmode="Normal" diffuse="0.142219 0.142219 0.142219" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.27451" />
+                                        <Material id="silver_0002" name="silver" blendmode="Normal" diffuse="0.476863 0.486275 0.486275" emissivepower="0" opacity="100" specularamount="0" specularroughness="6.47059" />
+				</Model>
+			</Group>
+		</Graph>
+		<Import SrcFile="../../../Sportscar_15k.fbx" ImageDir="Images" MeshDir="Meshes" >
+			<Image >
+				<Source >c_tex.jpg</Source>
+				<Dest >maps/c_tex.jpg</Dest>
+			</Image>
+			<Mesh >
+				<Source >frontWheels</Source>
+				<Dest >meshes/frontWheels.mesh</Dest>
+			</Mesh>
+			<Mesh >
+				<Source >backWheels</Source>
+				<Dest >meshes/backWheels.mesh</Dest>
+			</Mesh>
+			<Mesh >
+				<Source >BodyBack</Source>
+				<Dest >meshes/BodyBack.mesh</Dest>
+			</Mesh>
+			<Mesh >
+				<Source >BodyFront</Source>
+				<Dest >meshes/BodyFront.mesh</Dest>
+			</Mesh>
+		</Import>
+	</Project>
+</UIP>
