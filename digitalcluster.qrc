@@ -30,5 +30,6 @@
         <file>Cluster/qml/Navigation.qml</file>
         <file>Cluster/scripts/dateAndTime.qml</file>
         <file>Cluster/SampleProject.uia</file>
+        <file>Cluster/SampleProject.uip</file>
     </qresource>
 </RCC>

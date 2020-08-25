@@ -1,20 +1,19 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <application>
-    <assets initial="SampleProject">
-        <presentation id="SampleProject" src="presentations/SampleProject.uip"/>
-        <presentation-qml id="mapView" args="qml/Navigation.qml"/>
-        <dataInput max="260" min="0" name="speed" type="Ranged Number"/>
-        <dataInput max="7" min="0" name="rpm" type="Ranged Number"/>
-        <dataInput name="slide" type="String"/>
-        <dataInput name="dateAndTime" type="String"/>
-    </assets>
-    <statemachine ref="#logic">
-        <visual-states>
-            <state ref="Initial">
-                <enter>
-                    <goto-slide element="main:Scene" rel="next"/>
-                </enter>
-            </state>
-        </visual-states>
-    </statemachine>
+	<assets initial="SampleProject">
+		<dataInput name="speed" type="Ranged Number" min="0" max="260"/>
+		<dataInput name="rpm" type="Ranged Number" min="0" max="7"/>
+		<dataInput name="slide" type="String"/>
+		<dataInput name="dateAndTime" type="String"/>
+		<presentation id="SampleProject" src="SampleProject.uip"/>
+	</assets>
+	<statemachine ref="#logic">
+		<visual-states>
+			<state ref="Initial">
+				<enter>
+					<goto-slide element="main:Scene" rel="next"/>
+				</enter>
+			</state>
+		</visual-states>
+	</statemachine>
 </application>
