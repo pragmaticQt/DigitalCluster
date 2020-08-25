@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>Navigation.qml</file>
+        <file>Presentation3D.qml</file>
+        <file>Simulation.qml</file>
     </qresource>
 </RCC>

@@ -1,13 +1,107 @@
 <RCC>
     <qresource prefix="/">
+        <file>Cluster/effects/FXAA.effect</file>
+        <file>Cluster/effects/SMAA1X.effect</file>
         <file>Cluster/effects/VignetteEffect.effect</file>
+        <file>Cluster/fonts/Poppins-Bold.ttf</file>
+        <file>Cluster/fonts/Poppins-Regular.ttf</file>
+        <file>Cluster/fonts/Poppins-Thin.ttf</file>
+        <file>Cluster/fonts/TitilliumWeb-Bold.ttf</file>
         <file>Cluster/fonts/TitilliumWeb-Regular.ttf</file>
+        <file>Cluster/maps/effects/AreaTex-yflipped.png</file>
+        <file>Cluster/maps/effects/brushnoise.png</file>
+        <file>Cluster/maps/effects/HexagonalBokeh.png</file>
+        <file>Cluster/maps/effects/noise.png</file>
+        <file>Cluster/maps/effects/SearchTex-yflipped.png</file>
+        <file>Cluster/maps/effects/white.png</file>
+        <file>Cluster/maps/icons/(A) Lighting and Signaling Devices/A.01 - High Beam, Main Beam (ISO 7000-0082).png</file>
+        <file>Cluster/maps/icons/(A) Lighting and Signaling Devices/highBeam.png</file>
+        <file>Cluster/maps/icons/(A) Lighting and Signaling Devices/lowBeam.png</file>
+        <file>Cluster/maps/icons/(F) Engine/CheckEngine.png</file>
+        <file>Cluster/maps/icons/(F) Engine/F.03 - Engine Coolant Temperature (ISO 7000-0246).png</file>
+        <file>Cluster/maps/icons/(G) Fuel System/G.01 - Fuel (ISO 7000-0245).png</file>
+        <file>Cluster/maps/icons/(N) Information and Communication/N.01 - Phone (IEC 60417-5090).png</file>
+        <file>Cluster/maps/icons/(N) Information and Communication/N.01 - Phone (IEC 60417-5090)_Green.png</file>
+        <file>Cluster/maps/icons/(N) Information and Communication/N.01 - Phone (IEC 60417-5090)_Red.png</file>
+        <file>Cluster/maps/icons/(N) Information and Communication/N.01 - Phone (IEC 60417-5090)_White.png</file>
+        <file>Cluster/maps/icons/.DS_Store</file>
+        <file>Cluster/maps/icons/abs.png</file>
+        <file>Cluster/maps/icons/cd.png</file>
+        <file>Cluster/maps/icons/warning.png</file>
+        <file>Cluster/maps/materials/emissive.png</file>
+        <file>Cluster/maps/materials/emissive_mask.png</file>
+        <file>Cluster/maps/materials/randomGradient1D.png</file>
+        <file>Cluster/maps/materials/randomGradient2D.png</file>
+        <file>Cluster/maps/materials/randomGradient3D.png</file>
+        <file>Cluster/maps/materials/randomGradient4D.png</file>
+        <file>Cluster/maps/materials/shadow.png</file>
+        <file>Cluster/maps/materials/spherical_checker.png</file>
+        <file>Cluster/maps/ClusterFrame.png</file>
         <file>Cluster/maps/gradient_lines_001.png</file>
         <file>Cluster/maps/Icon_TurnLeft_ON.png</file>
         <file>Cluster/maps/kmh260.png</file>
+        <file>Cluster/maps/mobile.png</file>
         <file>Cluster/maps/OpenfootageNET_garage-512.hdr</file>
         <file>Cluster/maps/road.png</file>
         <file>Cluster/maps/Rpm7.png</file>
+        <file>Cluster/maps/rpm_bg.png</file>
+        <file>Cluster/maps/shadow.png</file>
+        <file>Cluster/maps/signal.png</file>
+        <file>Cluster/maps/speed_all.png</file>
+        <file>Cluster/maps/speed_bg.png</file>
+        <file>Cluster/maps/speed_center.png</file>
+        <file>Cluster/maps/speed_limit.png</file>
+        <file>Cluster/maps/speed_nidle.png</file>
+        <file>Cluster/maps/speedometer.png</file>
+        <file>Cluster/maps/tachometer.png</file>
+        <file>Cluster/maps/turn-border-left.png</file>
+        <file>Cluster/maps/turn-border-right.png</file>
+        <file>Cluster/materials/.materialdef</file>
+        <file>Cluster/materials/aluminium_anodized.shader</file>
+        <file>Cluster/materials/aluminium_anodized_emissive.shader</file>
+        <file>Cluster/materials/aluminum.shader</file>
+        <file>Cluster/materials/aluminum_anisotropic.shader</file>
+        <file>Cluster/materials/aluminum_brushed.shader</file>
+        <file>Cluster/materials/aluminum_emissive.shader</file>
+        <file>Cluster/materials/black.materialdef</file>
+        <file>Cluster/materials/black2.materialdef</file>
+        <file>Cluster/materials/body.materialdef</file>
+        <file>Cluster/materials/body2.materialdef</file>
+        <file>Cluster/materials/carpaint_blue_standard.shader</file>
+        <file>Cluster/materials/cd.materialdef</file>
+        <file>Cluster/materials/CheckEngine.materialdef</file>
+        <file>Cluster/materials/chrome.materialdef</file>
+        <file>Cluster/materials/d_glass.materialdef</file>
+        <file>Cluster/materials/glass_tex.materialdef</file>
+        <file>Cluster/materials/glass_tex2.materialdef</file>
+        <file>Cluster/materials/highBeam.materialdef</file>
+        <file>Cluster/materials/indicator-left-green.materialdef</file>
+        <file>Cluster/materials/indicator-right-green.materialdef</file>
+        <file>Cluster/materials/lowBeam.materialdef</file>
+        <file>Cluster/materials/Material.materialdef</file>
+        <file>Cluster/materials/measurement-scale.materialdef</file>
+        <file>Cluster/materials/mesh_fence.shader</file>
+        <file>Cluster/materials/metal_mesh_fine.shader</file>
+        <file>Cluster/materials/mobile.materialdef</file>
+        <file>Cluster/materials/navigation.materialdef</file>
+        <file>Cluster/materials/navigation_001.materialdef</file>
+        <file>Cluster/materials/phone.materialdef</file>
+        <file>Cluster/materials/progressLine.materialdef</file>
+        <file>Cluster/materials/progressLineWhite.materialdef</file>
+        <file>Cluster/materials/progressLineWhiteRight.materialdef</file>
+        <file>Cluster/materials/qwe.materialdef</file>
+        <file>Cluster/materials/rims.materialdef</file>
+        <file>Cluster/materials/rubber.materialdef</file>
+        <file>Cluster/materials/rubber2.materialdef</file>
+        <file>Cluster/materials/rubber_studded_black.shader</file>
+        <file>Cluster/materials/rubber_studded_emissive.shader</file>
+        <file>Cluster/materials/shadow.materialdef</file>
+        <file>Cluster/materials/signal.materialdef</file>
+        <file>Cluster/materials/silver.materialdef</file>
+        <file>Cluster/materials/speed_limit.materialdef</file>
+        <file>Cluster/materials/steel_milled_concentric.shader</file>
+        <file>Cluster/materials/turn-signal-green.materialdef</file>
+        <file>Cluster/materials/warning.materialdef</file>
         <file>Cluster/models/needle_2/meshes/qt_gauge_needles_2.mesh</file>
         <file>Cluster/models/needle_2/needle_2.import</file>
         <file>Cluster/models/Ring_2/meshes/qt_gauge_ring_2.mesh</file>
@@ -25,11 +119,14 @@
         <file>Cluster/models/tickmark_260/tickmark_260.import</file>
         <file>Cluster/models/tickmark_8_small/meshes/qt_gauge_tickmarks_8_small.mesh</file>
         <file>Cluster/models/tickmark_8_small/tickmark_8_small.import</file>
+        <file>Cluster/qmlstreams/main.qml</file>
+        <file>Cluster/qmlstreams/settings.qml</file>
         <file>Cluster/scripts/dateAndTime.qml</file>
         <file>Cluster/scripts/Map.jpg</file>
         <file>Cluster/scripts/Navigation.qml</file>
         <file>Cluster/scripts/Navigation.qmlc</file>
         <file>Cluster/SampleProject.uia</file>
         <file>Cluster/SampleProject.uip</file>
+        <file>Cluster/SampleProject_autosave.uip</file>
     </qresource>
 </RCC>

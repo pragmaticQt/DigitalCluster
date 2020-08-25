@@ -1,19 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <application>
-	<assets initial="SampleProject">
-		<dataInput name="speed" type="Ranged Number" min="0" max="260"/>
-		<dataInput name="rpm" type="Ranged Number" min="0" max="7"/>
-		<dataInput name="slide" type="String"/>
-		<dataInput name="dateAndTime" type="String"/>
-		<presentation id="SampleProject" src="SampleProject.uip"/>
-	</assets>
-	<statemachine ref="#logic">
-		<visual-states>
-			<state ref="Initial">
-				<enter>
-					<goto-slide element="main:Scene" rel="next"/>
-				</enter>
-			</state>
-		</visual-states>
-	</statemachine>
+    <assets initial="SampleProject">
+        <presentation src="SampleProject.uip" id="SampleProject"/>
+        <presentation-qml args="qmlstreams/settings.qml" id="settings"/>
+        <presentation src="SettingsMenu.uip" id="SettingsMenu"/>
+        <presentation-qml args="qmlstreams/main.qml" id="main"/>
+        <dataInput name="dateAndTime" type="String"/>
+        <dataInput name="distanceValue" type="Float"/>
+        <dataInput name="leftProgressbarColor" type="Vector3"/>
+        <dataInput name="leftProgressbarScale" type="Vector3"/>
+        <dataInput name="rightProgressbarScale" type="Vector3"/>
+        <dataInput name="rpmText" type="String"/>
+        <dataInput name="rpmValue" type="Vector3"/>
+        <dataInput name="songName" type="String"/>
+        <dataInput name="speedLimitWarning" type="Boolean"/>
+        <dataInput name="speedText" type="String"/>
+        <dataInput name="speedValue" type="Vector3"/>
+        <dataInput name="turnOnLeftIndicator" type="Boolean"/>
+        <dataInput name="turnOnRightIndicator" type="Boolean"/>
+        <dataInput name="unitTypeValue" type="String"/>
+    </assets>
+    <statemachine ref="#logic">
+        <visual-states>
+            <state ref="Initial">
+                <enter>
+                    <goto-slide element="main:Scene" rel="next"/>
+                </enter>
+            </state>
+        </visual-states>
+    </statemachine>
 </application>

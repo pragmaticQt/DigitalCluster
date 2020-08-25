@@ -1,0 +1,21 @@
+<MaterialData version="1.0">
+	<Property name="uEnvironmentTexture" type="Texture"><![CDATA[./maps/materials/spherical_checker.png]]></Property>
+	<Property name="uEnvironmentMappingEnabled">True</Property>
+	<Property name="uBakedShadowTexture" type="Texture"><![CDATA[./maps/materials/shadow.png]]></Property>
+	<Property name="uShadowMappingEnabled">False</Property>
+	<Property name="randomGradient1D" type="Texture"><![CDATA[./maps/materials/randomGradient1D.png]]></Property>
+	<Property name="randomGradient2D" type="Texture"><![CDATA[./maps/materials/randomGradient2D.png]]></Property>
+	<Property name="randomGradient3D" type="Texture"><![CDATA[./maps/materials/randomGradient3D.png]]></Property>
+	<Property name="randomGradient4D" type="Texture"><![CDATA[./maps/materials/randomGradient4D.png]]></Property>
+	<Property name="unit_conversion">1</Property>
+	<Property name="normal_base_color">0.305882 0.0941176 0.0980392</Property>
+	<Property name="grazing_base_color">0.0021 0.0074 0.017</Property>
+	<Property name="peel_amount">0.1</Property>
+	<Property name="peel_size">0.1</Property>
+	<Property name="sourcepath"><![CDATA[./materials/carpaint_blue_standard.shader]]></Property>
+	<Property name="importid"></Property>
+	<Property name="importfile"></Property>
+	<Property name="name"><![CDATA[materials/body2]]></Property>
+	<Property name="type">CustomMaterial</Property>
+	<Property name="path"><![CDATA[/home/osk/Downloads/Qt3DStudio_Part2_23_30/Qt3DStudio_Part2/Cluster/materials/body2.materialdef]]></Property>
+</MaterialData>

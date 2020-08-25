@@ -1,9 +1,9 @@
 /****************************************************************************
 **
-** Copyright (C) 2018 The Qt Company Ltd.
+** Copyright (C) 2016 The Qt Company Ltd.
 ** Contact: https://www.qt.io/licensing/
 **
-** This file is part of Qt 3D Studio Examples.
+** This file is part of the examples of the Qt Toolkit.
 **
 ** $QT_BEGIN_LICENSE:BSD$
 ** Commercial License Usage
@@ -33,7 +33,7 @@
 **
 **
 ** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-** "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+** "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT sNOT
 ** LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 ** A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
 ** OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -48,50 +48,39 @@
 **
 ****************************************************************************/
 
-/*[[
-    <Property name="target" formalName="Target" type="ObjectRef" default="" description="Text element to write the date and time to" />
-    <Property name="timeformat" formalName="Time Format" type="String" default="hh:mm:ss" description="Time Formatter" />
-    <Property name="locale" formalName="Date and Time Locale" type="String" default="en_EN" description="Date and Time Locale" />
-    <Property name="startImmediately" formalName="Start Immediately?" type="Boolean" default="True" publishLevel="Advanced" description="Start immediately, or wait for the Enable action to be called?" />
+import QtQuick 2.2
+import QtQuick.Controls 1.2
 
-    <Handler name="start" formalName="Start" category="DateAndTime" description="Start updating" />
-    <Handler name="stop" formalName="Stop" category="DateAndTime" description="Stop updating" />
-]]*/
 
-import QtStudio3D.Behavior 1.0
+Image {
+    width: 640
+    height: 480
 
-Behavior {
-    // External
-    property string target
-    property string timeformat
-    property string locale
-    property bool startImmediately
-    // Internal
-    property bool running: false
-    property var updateFunction
-    property string valueOut
-    property var currentDate: new Date()
+    Rectangle {
+        id: settingsScreen
+        width: 640; height: 480
+        opacity: 0.9
+        color: "black"
 
-    function start() {
-        running = true;
-    }
+        Column {
+            anchors.centerIn: settingsScreen
+            spacing: 5
+            Repeater {
+                model: ["Telephone", "Navigation", "Connect BT", "Engine", "Lights", "Suspension", "Music"]
 
-    function stop() {
-        running = false;
-    }
+                Rectangle {
+                    x: 50; y: 0
+                    width: 260; height: 30
+                    border.width: 2
+                    border.color: "white"
+                    color: "black"
+                    radius: 10
+                    opacity: 0.8
 
-    onInitialize: {
-        if (startImmediately)
-            start();
-    }
-
-    onUpdate: {
-        if (!running)
-            return;
-
-        currentDate = new Date();
-        valueOut = currentDate.toLocaleTimeString(Qt.locale(locale), timeformat);//currentDate.toLocaleDateString(Qt.locale(locale)) + "\n "
-
-        setAttribute(target, "textstring", valueOut);
+                    Text { anchors.centerIn: parent; color: "white"; text: modelData }
+                }
+            }
+        }
     }
 }
+

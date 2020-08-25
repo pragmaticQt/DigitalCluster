@@ -921,7 +921,7 @@
 				<Add ref="#materials/silver" name="materials/silver" diffuse="0.476863 0.486275 0.486275" importfile="models/Sportscar_15k/Sportscar_15k.import" importid="silver" specularroughness="6.47059" />
 				<Add ref="#materials/glass_tex" name="materials/glass_tex" diffusemap="#materials/glass_tex_diffusemap" importfile="models/Sportscar_15k/Sportscar_15k.import" importid="glass_tex" specularroughness="5.88235" />
 				<Add ref="#materials/glass_tex_diffusemap" name="glass_tex_diffusemap" importfile="models/Sportscar_15k/Sportscar_15k.import" importid="glass_tex_diffusemap" sourcepath="models/Sportscar_15k/maps/c_tex.jpg" subpresentation="" />
-				<Add ref="#materials/body" name="materials/body" importid="" normal_base_color="0.780392 0.25098 0.258824" />
+				<Add ref="#materials/body" name="materials/body" importid="" normal_base_color="0.780392 0.25098 0.258824" randomGradient1D="maps/materials/randomGradient1D.png" randomGradient2D="maps/materials/randomGradient2D.png" randomGradient3D="maps/materials/randomGradient3D.png" randomGradient4D="maps/materials/randomGradient4D.png" uBakedShadowTexture="maps/materials/shadow.png" uEnvironmentTexture="maps/materials/spherical_checker.png" />
 				<Add ref="#materials/black" name="materials/black" diffuse="0 0 0" importfile="models/Sportscar_15k/Sportscar_15k.import" importid="black" specularroughness="0.980392" />
 				<Add ref="#materials/d_glass" name="materials/d_glass" diffuse="0.160894 0.16512 0.154057" importfile="models/Sportscar_15k/Sportscar_15k.import" importid="d_glass" specularroughness="6.27451" />
 				<Add ref="#materials/speed_limit" name="materials/speed_limit" diffusemap="#materials/speed_limit_diffusemap" importid="" />
