@@ -25,10 +25,10 @@
         <file>Cluster/models/tickmark_260/tickmark_260.import</file>
         <file>Cluster/models/tickmark_8_small/meshes/qt_gauge_tickmarks_8_small.mesh</file>
         <file>Cluster/models/tickmark_8_small/tickmark_8_small.import</file>
-        <file>Cluster/presentations/SampleProject.uip</file>
-        <file>Cluster/qml/Map.jpg</file>
-        <file>Cluster/qml/Navigation.qml</file>
         <file>Cluster/scripts/dateAndTime.qml</file>
+        <file>Cluster/scripts/Map.jpg</file>
+        <file>Cluster/scripts/Navigation.qml</file>
+        <file>Cluster/scripts/Navigation.qmlc</file>
         <file>Cluster/SampleProject.uia</file>
         <file>Cluster/SampleProject.uip</file>
     </qresource>
