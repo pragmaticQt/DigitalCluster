@@ -128,5 +128,6 @@
         <file>Cluster/SampleProject.uia</file>
         <file>Cluster/SampleProject.uip</file>
         <file>Cluster/SampleProject_autosave.uip</file>
+        <file>car.png</file>
     </qresource>
 </RCC>

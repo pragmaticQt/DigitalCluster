@@ -1,4 +1,4 @@
-QT += widgets qml quick 3dstudioruntime2 gui virtualkeyboard
+QT += widgets qml quick 3dstudioruntime2 gui
 
 CONFIG += c++14
 

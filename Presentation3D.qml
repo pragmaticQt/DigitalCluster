@@ -2,12 +2,6 @@ import QtQuick 2.12
 import QtStudio3D 2.3
 
 Item {
-    property real naviTilt: 0
-    property real zoom: 12
-
-    Simulation {
-        id: simulation
-    }
 
     Studio3D {
         id: s3d
@@ -85,15 +79,15 @@ Item {
                 value: simulation.currentSongName
             }
         }
-        Studio3DProfiler {
-            id: profiler3d
-            visible: true
-            anchors.fill: parent
-            anchors.topMargin: 40
-        }
+//        Studio3DProfiler {
+//            id: profiler3d
+//            visible: true
+//            anchors.fill: parent
+//            anchors.topMargin: 40
+//        }
 
         Timer {
-            interval: 20000; running: true; repeat: true
+            interval: 60000; running: true; repeat: true
             property string switchSlide: "MergeIn"
 
             onTriggered:

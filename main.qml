@@ -20,4 +20,9 @@ Window {
         width: parent.width
         height: parent.height
     }
+
+    Simulation {
+        id: simulation
+    }
+
 }

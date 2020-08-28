@@ -12,10 +12,6 @@ Item {
     property real carPositionX: 40.755
     property real carPositionY: -73.995
 
-    Simulation {
-        id: simulation
-    }
-
     Plugin {
         id: mapboxglPlugin
         name: "mapboxgl"
@@ -38,15 +34,47 @@ Item {
         }
     }
 
+//    MapQuickItem {
+//        id: car
+//        visible: false
+//        anchorPoint.x: image.width/2
+//        anchorPoint.y: image.height/2
+
+//        sourceItem: Image {
+//            id: image
+//            source: "car.png"
+//        }
+//    }
+
     Map {
-        id: myMap
+        id: map
+        property MapCircle circle
+
         anchors.fill: parent
         plugin: mapboxglPlugin
         center: QtPositioning.coordinate(carPositionX, carPositionY)
         zoomLevel: zoom
         bearing: 30
         tilt: naviTilt
+
+
+        Component.onCompleted: {
+            circle = Qt.createQmlObject('import QtLocation 5.12; MapCircle {}', map)
+            circle.radius = 20
+            circle.color = 'red'
+            circle.border.width = 5
+            circle.border.color = 'gold'
+            map.addMapItem(circle)
+        }
+//        Component.onCompleted: {
+//            myMap.addMapItem(car)
+//            car.visible = true
+//        }
+
     }
+    Binding { target: map.circle; property: "center"; value: map.center }
+
+//    Binding { target: car; property: "coordinate"; value: myMap.center }
 
     function tiltIn()
     {
