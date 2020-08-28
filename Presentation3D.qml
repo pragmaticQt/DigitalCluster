@@ -3,6 +3,8 @@ import QtStudio3D 2.3
 
 Item {
 
+    property bool inMap: scene.currentSlideIndex !== 0
+
     Studio3D {
         id: s3d
         focus: true

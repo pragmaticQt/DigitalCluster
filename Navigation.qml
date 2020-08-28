@@ -34,21 +34,22 @@ Item {
         }
     }
 
-//    MapQuickItem {
-//        id: car
-//        visible: false
-//        anchorPoint.x: image.width/2
-//        anchorPoint.y: image.height/2
+    MapQuickItem {
+        id: car
+        visible: studio3d.inMap && map.mapReady
+        anchorPoint.x: image.width *2 / 3
+        anchorPoint.y: image.height/2
+//        zoomLevel: map.zoomLevel
 
-//        sourceItem: Image {
-//            id: image
-//            source: "car.png"
-//        }
-//    }
+        sourceItem: Image {
+            id: image
+            source: "car.png"
+            height: sourceSize.height / 2
+        }
+    }
 
     Map {
         id: map
-        property MapCircle circle
 
         anchors.fill: parent
         plugin: mapboxglPlugin
@@ -59,22 +60,12 @@ Item {
 
 
         Component.onCompleted: {
-            circle = Qt.createQmlObject('import QtLocation 5.12; MapCircle {}', map)
-            circle.radius = 20
-            circle.color = 'red'
-            circle.border.width = 5
-            circle.border.color = 'gold'
-            map.addMapItem(circle)
+            if (map.mapReady) map.addMapItem(car)
         }
-//        Component.onCompleted: {
-//            myMap.addMapItem(car)
-//            car.visible = true
-//        }
 
     }
-    Binding { target: map.circle; property: "center"; value: map.center }
 
-//    Binding { target: car; property: "coordinate"; value: myMap.center }
+    Binding { target: car; property: "coordinate"; value: map.center }
 
     function tiltIn()
     {
