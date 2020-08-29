@@ -1,6 +1,8 @@
 
 # Qt 3D Studio — Digital cluster for a car — Part II
 
+![Alt text](demo.gif?raw=true "demo")
+
  - Qt 3D Studio 2.3 runtime
  - Qt 5.12.2 mingw73_64
  - Qt Creator 4.12.4
